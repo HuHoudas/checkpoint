@@ -40,3 +40,278 @@ main {
     border-radius:  40% 24px 24px 40%/8px 8px 8px 8px;
     overflow: auto;
 }
+
+table {
+    margin: 0;
+    width: 100%;
+}
+.tablePayment {
+    display: flex;
+    justify-content: space-between;
+}
+
+tfoot tr {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+ul {
+    margin: 0;
+}
+input {
+    border: none;
+    outline: none;
+    height: 1.7rem;
+    border-radius: 4px 4px 4px 4px;
+}
+
+label {
+    font-size: 1.8rem;
+}
+
+button {
+    margin-block-start: 15px;
+    width: fit-content;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    filter: brightness(1.5);
+}
+
+.letter {
+    width: fit-content;
+}
+
+.array {
+    margin-block-start: 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+@media screen and (min-width:1200px){
+    .empty-whisky{
+        display: none;
+    }    
+    .desktop {
+        display: flex;
+    }
+
+    .whisky {
+        height: 200px;
+        margin-inline-start: 40px;
+    }
+
+    .inkpen {
+        height: 400px;
+        align-self: center;
+    }
+
+    .pages {
+        width: 65%;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 200px;
+    }
+
+    .page {
+        height: 60vh;
+    }
+    .container {
+        height: fit-content;
+        padding-block-start: 80px;
+    }
+    
+}
+
+@media screen and (min-width:1100px) and (max-width:1200px) {
+
+    .inkpen{
+        display: none;
+    }
+
+    .empty-whisky {
+        display: none;
+    }
+    
+    .desktop{
+        display: flex;
+        padding-inline-start:40px ;
+        align-items: flex-start;
+    }
+
+    .whisky {
+        height: 300px;
+        margin-block-start:  10px;
+    }
+
+    .pages{
+        margin: 0;
+        margin-block-start:5px ;
+    }
+    .page {
+        width: 25vw;
+        height: 80vh;
+    }
+    .container {
+        padding-block-start: 80px;
+    }
+}
+
+    @media screen and (min-width:1000px) and (max-width:1100px) {
+
+        .inkpen{
+            display: none;
+        }
+    
+        .whisky {
+            display: none;
+        }
+        
+        .desktop{
+            display: flex;
+            padding-inline-start:40px ;
+            align-items: flex-start;
+        }
+    
+        .empty-whisky {
+            height: 300px;
+            margin-block-start:  10px;
+        }
+    
+        .pages{
+            margin: 0;
+            margin-block-start:5px ;
+        }
+        .page {
+            width: 23vw;
+            height: 80vh;
+        }
+        .container {
+            padding-block-start: 80px;
+        }
+    }
+
+    @media screen and (min-width:800px) and (max-width:1000px) {
+
+        .whisky, .empty-whisky, .inkpen {
+            display: none;
+        }
+
+        .pages{
+
+            width: 98vw;
+            height: 71vh;
+            margin: 0;
+            margin: 10px;
+        }
+
+        .container {
+            padding-block-start: 80px;
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:800px) {
+        .whisky, .empty-whisky, .inkpen {
+            display: none;
+        }
+
+        .pages {
+            display: flex;
+            flex-direction: column-reverse  ;
+            width: 90%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .page {
+            width: 95%;
+        }
+
+        .leftpage {
+            margin-left: 20px;
+        }
+
+        .rightpage {
+            margin-left:10px ;
+            margin-top: 10px;
+        }
+
+        .navbar{
+            font-size: 1rem;
+            position: static;
+            width: 90vw;
+        }
+        .container {
+            padding-block-start: 0;
+        }
+
+        
+    }
+    @media screen and (min-width:320px) and (max-width:370px) {
+        .whisky, .empty-whisky, .inkpen {
+            display: none;
+        }
+
+        .pages {
+            display: flex;
+            flex-direction: column-reverse  ;
+            width: 90%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .page {
+            width: 95%;
+        }
+
+        .leftpage {
+            margin-left: 20px;
+        }
+
+        .rightpage {
+            margin-left:10px ;
+            margin-top: 10px;
+        }
+
+        .navbar{
+            font-size: 0.8rem;
+            position: static;
+            width: 90vw;
+        }
+        .container {
+            padding-block-start: 0;
+        }
+
+    }
+    @media screen and (max-width:800px) {
+    main {
+        display: flex;        
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        width: 100%;
+    }
+    .array {
+        flex-direction: column;
+    }
+
+    .page {
+        width: 100%;
+    }
+    .desktop {
+        width: 100%;
+    }
+    
+ }
